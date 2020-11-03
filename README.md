@@ -8,3 +8,5 @@ cd gpdwinlinux
 chmod +x fedora_winmax.sh
 ./fedora_winmax.sh
 ```
+### ProtonUpdater And RetroArch For Fedora
+I'm automating the installing of the awesome and simple [ProtonUpdater](https://copr.fedorainfracloud.org/coprs/david35mm/ProtonUpdater/) package so that you can just run `ProtonUpdater` in terminal when you want to check for a newer version of GloriousEggroll's forks of Valve Proton. It is recommended to run this command after running the post install script. Also installing the flatpak of RetroArch.
