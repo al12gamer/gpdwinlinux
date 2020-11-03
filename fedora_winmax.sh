@@ -16,11 +16,11 @@ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-releas
 sudo dnf groupupdate core -yq
 
 # install some basic stuff to get gaming
-sudo dnf install steam lutris zsh vim gamemode -yq
+sudo dnf install steam lutris wine vim gamemode -yq
 
 # add flathub and retroarch
-sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-sudo flatpak install --user flathub org.libretro.RetroArch
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install --user flathub org.libretro.RetroArch
 
 # add third party software
 
