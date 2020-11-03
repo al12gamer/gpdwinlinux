@@ -1,2 +1,3 @@
 # gpdwinlinux
 Post-install scripts for GPD Win Max devices I install Linux to
+Will turn the readme into a legitimate guide on how to get things quickly going in the future once I have more work done on the script...
