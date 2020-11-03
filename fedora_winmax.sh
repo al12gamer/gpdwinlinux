@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # create firmware file for screen and move to grub
-sudo mkdir /lib/firmware/edid
-base64 --decode /home/%user%/gpdwinlinux/winmaxscreen.txt > /lib/firmware/edid/gpdwinmax.bin
+# sudo mkdir /lib/firmware/edid
+# base64 --decode ~/gpdwinlinux/winmaxscreen.txt > /lib/firmware/edid/gpdwinmax.bin
 # GRUB_CMDLINE_LINUX="video=eDP-1:800x1280 drm.edid_firmware=eDP-1:edid/gpdwinmax.bin fbcon=rotate:1" add this to /etc/default/grub
 # sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 
