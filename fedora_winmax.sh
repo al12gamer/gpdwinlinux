@@ -15,6 +15,8 @@ gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
 
 # enable rpmfusion
+echo "installing extra repos and gaming packages"
+sleep .5
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -yq
 
 sudo dnf groupupdate core -y
@@ -29,6 +31,8 @@ flatpak install --user flathub org.libretro.RetroArch
 # add third party software
 
 # add Proton Updater from COPR
+echo "adding protonupdater"
+sleep .5
 sudo dnf copr enable david35mm/ProtonUpdater -y
 sudo dnf install ProtonUpdater -y
 
