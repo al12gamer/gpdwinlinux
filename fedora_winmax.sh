@@ -26,7 +26,7 @@ sudo dnf install steam lutris wine vim gamemode -y
 
 # add flathub and retroarch
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install --user flathub org.libretro.RetroArch
+flatpak install flathub org.libretro.RetroArch
 
 # add third party software
 
