@@ -2,7 +2,7 @@
 
 # create firmware file for screen and move to grub
 sudo mkdir /lib/firmware/edid
-base64 --decode ~/gpdwinlinux/winmaxscreen.txt > /lib/firmware/edid/gpdwinmax.bin
+base64 --decode ~/gpdwinlinux/winmaxscreen > /lib/firmware/edid/gpdwinmax.bin
 echo 'GRUB_CMDLINE_LINUX="video=eDP-1:800x1280 drm.edid_firmware=eDP-1:edid/gpdwinmax.bin fbcon=rotate:1"' >> /etc/default/grub
 sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 echo "GPD Win Max firmware installed"
@@ -22,7 +22,7 @@ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-releas
 sudo dnf groupupdate core -y
 
 # install some basic stuff to get gaming
-sudo dnf install steam lutris wine vim gamemode -y
+sudo dnf install steam lutris wine vim neofetch gamemode -y
 
 # add flathub and retroarch
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -44,3 +44,4 @@ sudo dnf check-update -y
 sudo dnf upgrade -y
 sudo dnf autoremove -y
 echo "Script complete, please reboot!"
+sleep 1
