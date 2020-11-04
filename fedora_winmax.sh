@@ -24,18 +24,6 @@ sudo dnf groupupdate core -y
 # install some basic stuff to get gaming
 sudo dnf install steam lutris wine vim neofetch gamemode -y
 
-# add flathub and retroarch
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.libretro.RetroArch
-
-# add third party software
-
-# add Proton Updater from COPR
-echo "adding protonupdater"
-sleep .5
-sudo dnf copr enable david35mm/ProtonUpdater -y
-sudo dnf install ProtonUpdater -y
-
 # update repositories
 
 sudo dnf check-update -y
