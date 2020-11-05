@@ -11,6 +11,7 @@ chmod +x fedora_winmax.sh
 ```
 Feel free to look over my bash script if you are uncomfortable running it as root- have had troubles in the past with sudo not properly installing the screen firmware for the win max.
 ### ProtonUpdater And RetroArch
+Run these as a normal user.
 If you want the awesome [ProtonUpdater](https://copr.fedorainfracloud.org/coprs/david35mm/ProtonUpdater/) package on Fedora so that you can just run `ProtonUpdater` in terminal when you want to check for a newer version of GloriousEggroll's forks of Valve Proton, along with RetroArch, please run 
 ```
 cd gpdwinlinux
