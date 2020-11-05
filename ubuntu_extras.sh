@@ -19,6 +19,7 @@ sudo apt install python3 python3-requests python3-setuptools-git -y
 git clone https://github.com/derrod/legendary.git
 cd legendary
 sudo python3 setup.py install
+cd
 
 # add proton-ge-updater
 echo "Grabbing script for updating Proton-GE builds easily"
