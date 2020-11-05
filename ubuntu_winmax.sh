@@ -13,11 +13,10 @@ echo "Installing extra repos and gaming packages"
 sleep .5
 
 sudo add-apt-repository ppa:lutris-team/lutris
-sudo add-apt-repository ppa:libretro/stable
 
 # install some basic stuff you would need otherwise
 sudo apt update -y
-sudo apt install steam-installer meson lutris vim neofetch gamemode gnome-tweaks retroarch* -y
+sudo apt install steam-installer meson lutris vim neofetch gamemode gnome-tweaks -y
 # meson may be needed to build gamemode in the future if it still isn't in main repos
 
 # upgrade packages
