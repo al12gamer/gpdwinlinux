@@ -12,7 +12,7 @@ mkdir /lib/firmware/edid
 # install gaming packages and nvidia drivers
 echo "installing steam etc..."
 sleep .5
-eopkg install steam lutris wine vim neofetch gamemode gnome-tweaks -y
+eopkg install steam lutris wine vim neofetch gamemode -y
 
 # update repositories
 
