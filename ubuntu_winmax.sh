@@ -12,9 +12,8 @@ sleep .5
 echo "Installing extra repos and gaming packages"
 sleep .5
 
-sudo ubuntu-drivers autoinstall -y
-sudo add-apt-repository ppa:lutris-team/lutris -y
-sudo add-apt-repository ppa:libretro/stable -y
+sudo add-apt-repository ppa:lutris-team/lutris
+sudo add-apt-repository ppa:libretro/stable
 
 # install some basic stuff you would need otherwise
 sudo apt update -y
