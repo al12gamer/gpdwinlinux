@@ -18,4 +18,4 @@ cd gpdwinlinux
 chmod +x fedora_extras.sh
 ./fedora_extras.sh
 ```
-The Ubuntu Extras script installs Protontricks and the [Proton GE Updater](https://github.com/die-zuckerschnecke/proton-ge-custom-updater), as well as adds the PPA for RetroArch and installs it.
+The Ubuntu Extras script installs Proton fixes and the [Proton GE Updater](https://github.com/die-zuckerschnecke/proton-ge-custom-updater), as well as adds the PPA for RetroArch and installs it.
