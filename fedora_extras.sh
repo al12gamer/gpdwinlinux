@@ -13,5 +13,10 @@ sudo dnf copr enable david35mm/ProtonUpdater -y
 sudo dnf update -y
 sudo dnf install ProtonUpdater -y
 
-echo "Script complete! Feel fre to exit."
+# add Legendary, open source reimplementation of Epic Games Launcher
+echo "Grabbing an open source implementation of the Epic Games Launcher, Legendary"
+sleep .5
+sudo dnf install legendary -y
+
+echo "Script complete! Feel free to exit."
 sleep .5
