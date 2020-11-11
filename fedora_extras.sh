@@ -13,14 +13,14 @@ flatpak install flathub org.libretro.RetroArch
 # add Proton Updater from COPR
 echo "Grabbing the awesome ProtonUpdater package"
 sleep .5
-sudo dnf copr enable david35mm/ProtonUpdater -y
-sudo dnf update -y
-sudo dnf install ProtonUpdater -y
+dnf copr enable david35mm/ProtonUpdater -y
+dnf update -y
+dnf install ProtonUpdater -y
 
 # add Legendary, open source reimplementation of Epic Games Launcher
 echo "Grabbing an open source implementation of the Epic Games Launcher, Legendary"
 sleep .5
-sudo dnf install legendary -y
+dnf install legendary -y
 
 echo "Script complete! Feel free to exit."
 sleep .5
