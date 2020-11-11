@@ -1,5 +1,9 @@
-#!/usr/bin/env bash
-
+#!/bin/bash
+if [ "$UID" != "0" ]; then
+	echo "ERROR: NOT RUNNING AS ROOT!"
+	echo "Please run this script as root to have it work correctly!"
+	exit 2
+fi
 # create firmware file for screen and move to grub
 mkdir /lib/firmware/edid
 base64 --decode ~/gpdwinlinux/winmaxscreen > /lib/firmware/edid/gpdwinmax.bin
