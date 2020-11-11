@@ -17,17 +17,24 @@ echo "installing extra repos and gaming packages"
 sleep .5
 dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 
+# update repositories
+
+dnf check-update -y
+
 dnf groupupdate core -y
 
 # install some basic stuff you would need otherwise
 dnf install steam lutris wine vim neofetch gamemode gnome-tweaks -y
 
-# update repositories
-
-dnf check-update -y
 
 # upgrade packages
 dnf upgrade -y
 dnf autoremove -y
+
+read -p "Would you like to install the extras? [Y/n]: " ans
+if [ "$ans" == "Y" ] || [ "$ans" == "y" ]; then
+	./fedora_extras.sh
+fi
+
 echo "Script complete, please reboot!"
 sleep 1

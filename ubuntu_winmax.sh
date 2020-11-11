@@ -19,12 +19,21 @@ sleep .5
 sudo add-apt-repository ppa:lutris-team/lutris
 
 # install some basic stuff you would need otherwise
-sudo apt update -y
-sudo apt install steam-installer meson lutris vim neofetch gamemode gnome-tweaks -y
+apt update -y
+apt install steam-installer meson lutris gamemode -y
+# Only install gnome-tweaks if Gnome is installed
+if $(dpkg -l *gnome* | grep '^ii' | grep -q 'gnome-shell'); then
+	apt install gnome-tweaks
+fi
 # meson may be needed to build gamemode in the future if it still isn't in main repos
 
 # upgrade packages
-sudo apt update -y && sudo apt upgrade -y
+sudo apt upgrade -y
+
+read -p "Would you like to install the extras? [Y/n]: " ans
+if [ "$ans" == "Y" ] || [ "$ans" == "y" ]; then
+	./ubuntu_extras.sh
+fi
 
 echo "Script complete, please reboot!"
 sleep 1
