@@ -1,5 +1,9 @@
-#!/usr/bin/env bash
-
+#!/bin/bash
+if [ "$UID" != "0" ]; then
+	echo "ERROR: NOT RUNNING AS ROOT!"
+	echo "Please run this script as root to have it work correctly!"
+	exit 2
+fi
 # add retroarch
 echo "Installing RetroArch"
 sleep .5
