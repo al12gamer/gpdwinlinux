@@ -1,7 +1,8 @@
 # Post-Install Scripts for GPD Win Devices
-These scripts should be able to get you up and running as quickly as possible after installing the associated distros. I will name them according to the device as well. I plan on getting newer devices in the future, starting after the GPD Win Max.
+These scripts should be able to get you up and running as quickly as possible after installing the associated distros. I will name them according to the device as well. I plan on getting newer devices in the future, starting after the GPD Win Max, but no promises.
 ## Quick Start
 The script assumes you are `git clone` -ing into your user directory. Each script is named for the associated linux distro. Below is an example of running the Fedora script...which you will need to run as root due to the display firmware file.
+Don't forget to install Git!
 ```bash
 git clone https://github.com/al12gamer/gpdwinlinux.git
 cd gpdwinlinux
