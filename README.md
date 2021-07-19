@@ -20,7 +20,7 @@ If you are on a derivative distro such as Pop!_OS, you need to run the script fo
 This script may point you to the correct script to run, if you are at all unsure.
 
 ### ProtonUpdater And RetroArch
-If you want the awesome [ProtonUpdater](https://copr.fedorainfracloud.org/coprs/david35mm/ProtonUpdater/) package on Fedora so that you can just run `ProtonUpdater` in terminal when you want to check for a newer version of GloriousEggroll's forks of Valve Proton, along with RetroArch, please run 
+If you want the awesome [protonup](https://pypi.org/project/protonup/) package on Fedora so that you can just run `protonup` in terminal when you want to check for a newer version of GloriousEggroll's forks of Valve Proton, along with RetroArch, please run 
 ```
 cd gpdwinlinux
 sudo ./fedora_extras.sh
