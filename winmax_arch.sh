@@ -11,10 +11,10 @@ echo 'GRUB_CMDLINE_LINUX="video=eDP-1:800x1280 drm.edid_firmware=eDP-1:edid/gpdw
 grub-mkconfig -o /boot/grub/grub.cfg
 echo "GPD Win Max firmware installed"
 sleep 2
-sudo pacman -Syu
+sudo pacman -Syu --noconfirm
 echo "grabbing steam, lutris, etc"
 sleep 2
-sudo pacman -S steam lutris python-pip
+sudo pacman -S steam lutris python-pip --noconfirm
 pip install protonup
 echo "grabbing heroic launcher, flatpak"
 sudo yay -S heroic-games-launcher-bin
