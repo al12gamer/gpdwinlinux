@@ -25,4 +25,4 @@ If you want the awesome [protonup](https://pypi.org/project/protonup/) package o
 cd gpdwinlinux
 sudo ./fedora_extras.sh
 ```
-The Ubuntu Extras script installs Proton fixes and the [Proton GE Updater](https://github.com/die-zuckerschnecke/proton-ge-custom-updater), as well as adds the PPA for RetroArch and installs it.
+The Ubuntu Extras script installs [protonup](https://pypi.org/project/protonup/), as well as adds the PPA for RetroArch and installs it.
