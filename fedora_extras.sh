@@ -10,12 +10,11 @@ sleep .5
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub org.libretro.RetroArch
 
-# add Proton Updater from COPR
-echo "Grabbing the awesome ProtonUpdater package"
+# add Proton Updater from pip
+echo "Grabbing the awesome protonup package"
 sleep .5
-dnf copr enable david35mm/ProtonUpdater -y
-dnf update -y
-dnf install ProtonUpdater -y
+sudo dnf install python-pip -y
+pip install protonup
 
 # add Legendary, open source reimplementation of Epic Games Launcher
 echo "Grabbing an open source implementation of the Epic Games Launcher, Legendary"
