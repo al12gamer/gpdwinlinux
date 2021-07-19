@@ -23,6 +23,15 @@ dnf check-update -y
 
 dnf groupupdate core -y
 
+# install multimedia packages
+sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin -yq
+
+sudo dnf groupupdate sound-and-video -yq
+
+# fedora better fonts
+sudo dnf copr enable dawid/better_fonts -yq
+sudo dnf install fontconfig-enhanced-defaults fontconfig-font-replacements -yq
+
 # install some basic stuff you would need otherwise
 dnf install steam lutris wine vim neofetch gamemode gnome-tweaks -y
 
