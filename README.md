@@ -1,6 +1,5 @@
 # Post-Install Scripts for GPD Win Devices
-These scripts should be able to get you up and running as quickly as possible after installing the associated distros. I will name them according to the device as well. I plan on getting newer devices in the future, starting after the GPD Win Max, but no promises. I may support the GPD Win Max 1 as well as if a Ryzen 6000 series of the device comes out, as it looks like RDNA2 shows promise.
-
+These scripts should be able to get you up and running as quickly as possible after installing the associated distros. I will name them according to the device as well. I plan on getting newer devices in the future, starting after the GPD Win Max, but no promises. I may support the GPD Win Max 2 as well, if we see better display support in the future.
 ## Quick Start
 The script assumes you are `git clone` -ing into your user directory. Each script is named for the associated linux distro. Below is an example of running the Fedora script...which you will need to run as root due to the display firmware file.
 Don't forget to install Git!
