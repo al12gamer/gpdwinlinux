@@ -14,7 +14,7 @@ sleep .5
 
 # enable rpmfusion
 echo "installing extra repos and gaming packages"
-sleep .5
+sleep 2
 dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 
 # enable eggy's repo for better game performance
@@ -40,8 +40,8 @@ dnf install steam lutris wine vim neofetch gamemode gnome-tweaks -y
 
 
 # upgrade packages
-dnf upgrade -y
-dnf autoremove -y
+sudo dnf upgrade -y
+sudo dnf autoremove -y
 
 read -p "Would you like to install the extras? [Y/n]: " ans
 if [ "$ans" == "Y" ] || [ "$ans" == "y" ]; then
