@@ -11,14 +11,18 @@ base64 --decode ~/gpdwinlinux/winmaxscreen > /lib/firmware/edid/gpdwinmax.bin
 echo 'video=eDP-1:800x1280 drm.edid_firmware=eDP-1:edid/gpdwinmax.bin fbcon=rotate:1' > /etc/kernel/cmdline.d/gpdwinlinux.conf
 clr-boot-manager update
 echo "GPD Win Max firmware installed"
-sleep .5
+sleep 1
 
-# install gaming packages and nvidia drivers
+# install gaming packages
 echo "installing steam etc..."
-sleep .5
+sleep 2
 eopkg update-repo
-eopkg install steam lutris wine vim neofetch gamemode -y
+eopkg install steam lutris wine vim neofetch gamemode winetricks python3 pip -y
 
+# add protonup
+pip install protonup
+echo "protonup installed, run protonup in your terminal to get newer proton-ge releases"
+sleep 2
 # update repositories
 
 eopkg upgrade -y
