@@ -18,6 +18,9 @@ sudo pacman -S steam lutris python-pip --noconfirm
 pip install protonup
 echo "grabbing heroic launcher, flatpak"
 sudo yay -S heroic-games-launcher-bin
-sudo pacman -S flatpak
+sudo pacman -S flatpak --noconfirm
 echo "all good to go!"
 sleep 2
+sudo pacman --sync --refresh --noconfirm
+sudo pacman --sync --needed archlinux-keyring --noconfirm
+sudo pacman -Syu --noconfirm
