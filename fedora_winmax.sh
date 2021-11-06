@@ -17,8 +17,9 @@ echo "installing extra repos and gaming packages"
 sleep 2
 dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 
-# enable eggy's repo for better game performance
-sudo dnf copr enable gloriouseggroll/nobara-repos -yq
+# enable eggy's suggestions for better gaming performance by default
+sudo dnf copr enable gloriouseggroll/mesa-aco -yq
+sudo dnf copr enable sentry/kernel-fsync -yq
 
 # update repositories
 
@@ -36,12 +37,11 @@ sudo dnf copr enable dawid/better_fonts -yq
 sudo dnf install fontconfig-enhanced-defaults fontconfig-font-replacements -yq
 
 # install some basic stuff you would need otherwise
-dnf install steam lutris wine vim neofetch gamemode gnome-tweaks -y
+sudo dnf install steam lutris wine vim neofetch gamemode gnome-tweaks -y
 
 
 # upgrade packages
-sudo dnf upgrade -y
-sudo dnf autoremove -y
+sudo dnf distro-sync -y && sudo dnf update --refresh -y && sudo dnf autoremove -y && flatpak update -y && flatpak remove --unused 
 
 read -p "Would you like to install the extras? [Y/n]: " ans
 if [ "$ans" == "Y" ] || [ "$ans" == "y" ]; then
