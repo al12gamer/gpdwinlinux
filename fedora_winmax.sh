@@ -19,7 +19,6 @@ dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(r
 
 # enable eggy's suggestions for better gaming performance by default
 sudo dnf copr enable gloriouseggroll/mesa-aco -yq
-sudo dnf copr enable sentry/kernel-fsync -yq
 
 # update repositories
 
