@@ -13,8 +13,8 @@ flatpak install flathub org.libretro.RetroArch
 # add Proton Updater from pip
 echo "Grabbing the awesome protonup package"
 sleep .5
-sudo dnf install python-pip -y
-pip install protonup
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub net.davidotek.pupgui2 -y
 
 # add Legendary, open source reimplementation of Epic Games Launcher
 echo "Grabbing an open source implementation of the Epic Games Launcher, Legendary"
