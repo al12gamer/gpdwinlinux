@@ -19,9 +19,9 @@ If you are on a derivative distro such as Pop!_OS, you need to run the script fo
 This script may point you to the correct script to run, if you are at all unsure.
 
 ### ProtonUpdater And RetroArch
-If you want the awesome [protonup](https://pypi.org/project/protonup/) package on Fedora so that you can just run `protonup` in terminal when you want to check for a newer version of GloriousEggroll's forks of Valve Proton, along with RetroArch, please run 
+If you want the awesome [protonup](https://flathub.org/apps/details/net.davidotek.pupgui2) package on Fedora so that you can use a point and click app to check for a newer version of GloriousEggroll's forks of Valve Proton, along with RetroArch, please run... 
 ```
 cd gpdwinlinux
 sudo ./fedora_extras.sh
 ```
-The Ubuntu Extras script installs [protonup](https://pypi.org/project/protonup/), as well as adds the PPA for RetroArch and installs it.
+The Ubuntu Extras script installs [protonup](https://flathub.org/apps/details/net.davidotek.pupgui2), as well as adds the PPA for RetroArch and installs it.
