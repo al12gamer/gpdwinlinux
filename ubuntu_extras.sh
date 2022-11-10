@@ -28,7 +28,8 @@ cd
 # add protonup
 echo "Grabbing protonup for updating Proton-GE builds easily"
 sleep .5
-sudo apt install curl python-pip -y
-pip install protonup
+sudo apt install flatpak -y
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub net.davidotek.pupgui2
 echo "Script complete, feel free to exit"
 sleep .5
