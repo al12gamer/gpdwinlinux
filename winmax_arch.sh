@@ -16,9 +16,10 @@ echo "grabbing steam, lutris, etc"
 sleep 2
 sudo pacman -S steam lutris python-pip --noconfirm
 pip install protonup
-echo "grabbing heroic launcher, flatpak"
+echo "grabbing heroic launcher, flatpak protonup"
 sudo yay -S heroic-games-launcher-bin
 sudo pacman -S flatpak --noconfirm
+flatpak install flathub net.davidotek.pupgui2
 echo "all good to go!"
 sleep 2
 sudo pacman --sync --refresh --noconfirm
