@@ -20,7 +20,7 @@ echo "grabbing heroic launcher, flatpak protonup"
 sudo yay -S heroic-games-launcher-bin
 sudo pacman -S flatpak --noconfirm
 flatpak install flathub net.davidotek.pupgui2
-echo "all good to go!"
+echo "all good to go! please reboot soon"
 sleep 2
 sudo pacman --sync --refresh --noconfirm
 sudo pacman --sync --needed archlinux-keyring --noconfirm
