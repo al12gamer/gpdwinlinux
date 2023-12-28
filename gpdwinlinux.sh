@@ -9,7 +9,7 @@ distro=$(lsb_release -is | tr '[:upper:]' '[:lower:]')
 if [ "$distro" == "ubuntu" ]; then
 	./ubuntu_winmax.sh
 elif [ "$distro" == "fedora" ]; then
-	./fedora_winmax.sh
+	./fedora.sh
 elif [ "$distro" == "solus" ]; then
 	./solus_winmax.sh
 else
