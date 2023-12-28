@@ -3,10 +3,11 @@ These scripts should be able to get you up and running as quickly as possible af
 ## Quick Start
 The script assumes you are `git clone` -ing into your user directory. Each script is named for the associated linux distro. Below is an example of running the Fedora script...which you will need to run as root due to the display firmware file.
 Don't forget to install Git!
+The below is an example on how to run this for Fedora users.
 ```bash
 git clone https://github.com/al12gamer/gpdwinlinux.git
 cd gpdwinlinux
-sudo ./fedora_winmax.sh
+sudo ./fedora.sh
 ```
 Feel free to look over my bash script if you are uncomfortable running it as root- have had troubles in the past with sudo not properly installing the screen firmware for the win max.
 
