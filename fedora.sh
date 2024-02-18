@@ -7,9 +7,9 @@ fi
 # create firmware file for screen and move to grub
 mkdir /lib/firmware/edid
 base64 --decode ~/gpdwinlinux/winmaxscreen > /lib/firmware/edid/gpdwinmax.bin
-echo 'GRUB_CMDLINE_LINUX="video=eDP-1:800x1280 drm.edid_firmware=eDP-1:edid/gpdwinmax.bin fbcon=rotate:1"' >> /etc/default/grub
+echo 'GRUB_CMDLINE_LINUX="video=eDP-1:1080x1920 drm.edid_firmware=eDP-1:edid/gpdwinmax.bin fbcon=rotate:1"' >> /etc/default/grub
 grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
-echo "GPD Win Max firmware installed"
+echo "GPD firmware installed"
 sleep .5
 
 # enable rpmfusion
