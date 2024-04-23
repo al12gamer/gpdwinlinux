@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
+
 if [ "$UID" != "0" ]; then
 	echo "ERROR: NOT RUNNING AS ROOT!"
 	echo "Please run this script as root to have it work correctly!"
